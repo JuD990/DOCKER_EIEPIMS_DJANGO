@@ -4,4 +4,4 @@ from rest_framework.decorators import api_view
 
 @api_view(['GET'])
 def hello_world(request):
-    return Response({"message": "Hello from Django API!"})
+    return Response({"message": "Hello Django API! from Jude Adolfo"})
