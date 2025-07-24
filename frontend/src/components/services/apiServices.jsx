@@ -22,7 +22,7 @@ apiService.interceptors.request.use(
     }
 
     // Add Authorization header if available
-    const authToken = localStorage.getItem('authToken'); // Assuming the token is stored in localStorage
+    const authToken = localStorage.getItem('authToken');
     if (authToken) {
       config.headers['Authorization'] = `Bearer ${authToken}`;
     }

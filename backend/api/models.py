@@ -16,7 +16,7 @@ class Students(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith   ('pbkdf2_sha256$'):
+        if self.password and not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super().save(*args, **kwargs)
 
@@ -36,7 +36,7 @@ class CollegePOCs(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith   ('pbkdf2_sha256$'):
+        if self.password and not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super().save(*args, **kwargs)
 
@@ -57,7 +57,7 @@ class LeadPOCs(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith   ('pbkdf2_sha256$'):
+        if self.password and not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super().save(*args, **kwargs)
 
@@ -77,7 +77,7 @@ class HeadPOCs(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith   ('pbkdf2_sha256$'):
+        if self.password and not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super().save(*args, **kwargs)
 
@@ -97,7 +97,7 @@ class EslPrime(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith   ('pbkdf2_sha256$'):
+        if self.password and not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super().save(*args, **kwargs)
 
@@ -117,7 +117,7 @@ class EslChampion(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith   ('pbkdf2_sha256$'):
+        if self.password and not self.password.startswith('pbkdf2_sha256$'):
             self.password = make_password(self.password)
         super().save(*args, **kwargs)
 

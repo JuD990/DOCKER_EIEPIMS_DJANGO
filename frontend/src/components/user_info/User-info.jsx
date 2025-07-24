@@ -26,7 +26,6 @@ const UserInfo = () => {
 
   const [userId, setUserId] = useState(null);
   const [role, setRole] = useState(null);
-  const [file, setFile] = useState(null);
   const [token, setToken] = useState(null);
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -112,7 +111,7 @@ const UserInfo = () => {
         let passwordMatches = false;
 
         if (!user.password) {
-          // No password set — fallback to ID as default password
+          // No password set — fallback to student/employee ID as default password
           passwordMatches = trimmedInput === idToMatch;
         } else {
           // Password exists — must match bcrypt hash
